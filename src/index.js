@@ -1,13 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
+import UserContextProvider from "./context/UserContext";
+import Login from "./Login";
+import Profile from "./Profile";
+import Logout from "./Logout";
+import RefDemo from "./RefDemo";
+import ReducerDemo from "./ReducerDemo";
+import TicTacToe from "./TicTacToe";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <BrowserRouter>
+      <UserContextProvider>
+        <App />
+        <Login/>
+        <Profile/>
+        <Logout/>
+        <RefDemo/>
+      </UserContextProvider>
+    </BrowserRouter> */}
+
+    {/* <RefDemo/> */}
+
+    {/* <ReducerDemo/> */}
+
+    <TicTacToe/>
   </React.StrictMode>
 );
 
